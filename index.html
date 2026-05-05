@@ -28,6 +28,8 @@
     --btn-op-fg:   #ff4444;
     --btn-op-bd:   #3d0e0e;
     /* number keys */
+    --btn-num-bg:  #212121;
+    --btn-num-bg-h:#2a2a2a;
     --btn-num-bd:  #2a2a2a;
     /* equals */
     --btn-eq:      #e02020;
@@ -36,17 +38,17 @@
     --settings-bg: #0d0d0d;
   }
   .theme-light {
-    --bg-app:      #e8e8e8;
-    --bg-surface:  #f5f5f5;
+    --bg-app:      #f0f0f0;
+    --bg-surface:  #fafafa;
     --bg-display:  #ffffff;
-    --bg-btn:      #ececec;
-    --bg-btn-h:    #dedede;
+    --bg-btn:      #e8e8e8;
+    --bg-btn-h:    #d8d8d8;
     --accent:      #cc0000;
     --accent-d:    #990000;
     --accent-l:    #ee2222;
     --accent-glow: rgba(204,0,0,0.18);
     --c-result:    #111111;
-    --c-expr:      #888888;
+    --c-expr:      #666666;
     --c-muted:     #aaaaaa;
     --btn-util-bg: #fde0e0;
     --btn-util-fg: #cc0000;
@@ -54,10 +56,12 @@
     --btn-op-bg:   #ffe6e6;
     --btn-op-fg:   #bb0000;
     --btn-op-bd:   #f5cccc;
-    --btn-num-bd:  #dddddd;
+    --btn-num-bg:  #ffffff;
+    --btn-num-bg-h:#eeeeee;
+    --btn-num-bd:  #d0d0d0;
     --btn-eq:      #cc0000;
-    --border:      #e0e0e0;
-    --divider:     #e8e8e8;
+    --border:      #d8d8d8;
+    --divider:     #e4e4e4;
     --settings-bg: #f2f2f2;
   }
 
@@ -228,10 +232,10 @@
   /* number keys — slightly lighter bg */
   .k.num {
     font-size:34px; letter-spacing:1.5px;
-    background:#212121; border-color:var(--btn-num-bd);
-    box-shadow:inset 0 -2px 0 rgba(0,0,0,.5);
+    background:var(--btn-num-bg, #212121); border-color:var(--btn-num-bd);
+    box-shadow:inset 0 -2px 0 rgba(0,0,0,.3);
   }
-  .k.num:hover { background:#2a2a2a; }
+  .k.num:hover { background:var(--btn-num-bg-h, #2a2a2a); }
 
   /* ── UTILITY ROW (AC  +/-  %  ⌫) — unified identical style ── */
   .k.util {
